@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+airline = Airline.create(name:"United Airlines")
+review = Review.create(title:"Good", description:"smooth ride", rate:5, airline_id:airline.id)
+airline2 = Airline.create(name:"No Good Airlines")
